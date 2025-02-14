@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/_components/MenuSection.js"
+    "src/app/_components/MenuSection.tsx",
+    "src/app/_components/Option.js"
   ],
   "exclude": ["node_modules"]
 }
