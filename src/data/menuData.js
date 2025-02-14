@@ -1,6 +1,6 @@
 // src/data/menuData.js
 export const menuData = {
-  chopp: [
+  chopes: [
     {
       name: "PILGER BRITA",
       alcoholContent: "4,5 • 11 IBU",
