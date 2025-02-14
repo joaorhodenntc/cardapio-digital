@@ -16,16 +16,16 @@ export default function Options({
   return (
     <div
       className={`container mx-auto px-4 pt-2 fixed bg-[#FEF1EC] ${
-        isFixed ? "top-0 left-0 w-full z-50 pt-3 pb-3" : "mt-5"
+        isFixed ? "top-0 left-0 w-full z-50 pt-3" : "mt-5"
       }`}
     >
-      <div className="flex space-x-4 overflow-x-auto scrollbar-hide">
+      <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-3">
         {Object.keys(items).map((category) => (
           <div
             key={category}
             className={`border border-black py-1 px-3 cursor-pointer rounded-lg transition-colors duration-300 ${
               categorySelected === category
-                ? "bg-orange-500 text-white"
+                ? "bg-[#F68F4F] text-white"
                 : "bg-white"
             }`}
             onClick={() => handleCategoryClick(category)}
