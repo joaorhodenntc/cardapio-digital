@@ -94,7 +94,7 @@ const Cardapio = () => {
       />
 
       <div
-        className={`container mx-auto px-4 pt-8 mt-16 relative ${
+        className={`container mx-auto px-4 pt-8 mt-16 ${
           isFixed ? "pt-12" : ""
         }`}
       >
