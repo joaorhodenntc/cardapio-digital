@@ -45,36 +45,36 @@ const Cardapio = () => {
   }, []);
 
   // Efeito para observar as seções e atualizar o select
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setSelectedSection(entry.target.id);
-          }
-        });
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.4, // 50% da seção precisa estar visível
-      }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           setSelectedSection(entry.target.id);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       root: null,
+  //       rootMargin: "0px",
+  //       threshold: 0.4, // 50% da seção precisa estar visível
+  //     }
+  //   );
 
-    // Observa as seções
-    if (chopesRef.current) observer.observe(chopesRef.current);
-    if (cevasRef.current) observer.observe(cevasRef.current);
-    if (drinksAutoraisRef.current) observer.observe(drinksAutoraisRef.current);
+  //   // Observa as seções
+  //   if (chopesRef.current) observer.observe(chopesRef.current);
+  //   if (cevasRef.current) observer.observe(cevasRef.current);
+  //   if (drinksAutoraisRef.current) observer.observe(drinksAutoraisRef.current);
 
-    // Limpa o observer ao desmontar o componente
-    return () => {
-      if (chopesRef.current) observer.unobserve(chopesRef.current);
-      if (cevasRef.current) observer.unobserve(cevasRef.current);
-      if (drinksAutoraisRef.current) {
-        observer.unobserve(drinksAutoraisRef.current);
-      }
-    };
-  }, []);
+  //   // Limpa o observer ao desmontar o componente
+  //   return () => {
+  //     if (chopesRef.current) observer.unobserve(chopesRef.current);
+  //     if (cevasRef.current) observer.unobserve(cevasRef.current);
+  //     if (drinksAutoraisRef.current) {
+  //       observer.unobserve(drinksAutoraisRef.current);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <div className="mt-5">
