@@ -93,7 +93,11 @@ const Cardapio = () => {
         setCategorySelected={setSelectedSection}
       />
 
-      <div className="container mx-auto px-4 pt-8 mt-20 relative">
+      <div
+        className={`container mx-auto px-4 pt-8 mt-16 relative ${
+          isFixed ? "pt-12" : ""
+        }`}
+      >
         <div id="chopes" ref={chopesRef} className="scroll-mt-20 relative">
           <MenuSection title="CHOPES" items={menuData.chopes} />
         </div>
