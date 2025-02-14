@@ -57,7 +57,7 @@ const Cardapio = () => {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.5, // 50% da seção precisa estar visível
+        threshold: 0.4, // 50% da seção precisa estar visível
       }
     );
 
